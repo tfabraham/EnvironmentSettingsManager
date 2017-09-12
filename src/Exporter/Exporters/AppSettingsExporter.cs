@@ -5,34 +5,30 @@
 
 using System.Xml;
 
-namespace EnvironmentSettingsExporter
+namespace EnvSettingsManager
 {
     /// <summary>
     /// Export the settings contained in a DataTable to multiple XML files, one per declared environment.
-    /// The output format is the XmlPreprocess settings file format.
+    /// The output XML format is the .NET appSettings structure.
     /// </summary>
-    internal class DataTableToXmlPreprocessXmlExporter : DataTableToXmlExporter
+    internal class AppSettingsExporter : XmlExporterBase
     {
+        internal AppSettingsExporter(ExportActionArguments args)
+            : base(args)
+        { }
+
         protected override void WriteHeader(XmlWriter xmlw, string environmentName)
         {
-            xmlw.WriteStartElement("settings");
+            xmlw.WriteStartElement("appSettings");
         }
 
         protected override void WriteValue(XmlWriter xmlw, string settingName, string settingValue, string environmentName, bool valueContainsReservedXmlCharacter)
         {
-            xmlw.WriteStartElement("property");
-
-            xmlw.WriteAttributeString("name", settingName);
+            xmlw.WriteStartElement("add");
+            xmlw.WriteAttributeString("key", settingName);
 
             // Write the value to the XML stream
-            if (valueContainsReservedXmlCharacter)
-            {
-                xmlw.WriteCData(settingValue);
-            }
-            else
-            {
-                xmlw.WriteString(settingValue);
-            }
+            xmlw.WriteAttributeString("value", settingValue);
 
             xmlw.WriteEndElement();
         }

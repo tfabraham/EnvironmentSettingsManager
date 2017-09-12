@@ -1,0 +1,303 @@
+﻿<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+    <Title>Environment Settings</Title>
+    <Author>Thomas F. Abraham</Author>
+    <Description>Generates settings files for the XmlPreprocessor</Description>
+    <LastAuthor>Thomas Abraham</LastAuthor>
+    <LastPrinted>2003-10-20T13:03:55Z</LastPrinted>
+    <Created>2003-10-18T03:55:53Z</Created>
+    <LastSaved>2010-01-22T20:24:15Z</LastSaved>
+    <Version>12.00</Version>
+  </DocumentProperties>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+    <WindowHeight>8700</WindowHeight>
+    <WindowWidth>12315</WindowWidth>
+    <WindowTopX>360</WindowTopX>
+    <WindowTopY>120</WindowTopY>
+    <TabRatio>151</TabRatio>
+    <ProtectStructure>False</ProtectStructure>
+    <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>
+  <Styles>
+    <Style ss:ID="Default" ss:Name="Normal">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" />
+      <Interior />
+      <NumberFormat />
+      <Protection />
+    </Style>
+    <Style ss:ID="s63">
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s64">
+      <Interior />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s65">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1" />
+      <Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection />
+    </Style>
+    <Style ss:ID="s66">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" x:Family="Swiss" />
+      <Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection />
+    </Style>
+    <Style ss:ID="s67">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" x:Family="Swiss" />
+      <Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s68">
+      <Font ss:FontName="Arial" x:Family="Swiss" />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s69">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection />
+    </Style>
+    <Style ss:ID="s70">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s71">
+      <Borders />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s72">
+      <Alignment ss:Vertical="Top" />
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Color="#000000" />
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Color="#000000" />
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Color="#000000" />
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Color="#000000" />
+      </Borders>
+      <Interior ss:Color="#CCFFFF" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s73">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" />
+      <Interior />
+      <NumberFormat />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s74">
+      <Alignment ss:Vertical="Bottom" ss:WrapText="1" />
+      <Borders>
+        <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Color="#000000" />
+        <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Color="#000000" />
+        <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Color="#000000" />
+        <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Color="#000000" />
+      </Borders>
+      <Interior ss:Color="#CCFFFF" ss:Pattern="Solid" />
+      <NumberFormat ss:Format="@" />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s75">
+      <Alignment ss:Vertical="Bottom" ss:WrapText="1" />
+      <NumberFormat ss:Format="@" />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s76">
+      <Alignment ss:Horizontal="Left" ss:Vertical="Bottom" ss:WrapText="1" />
+      <NumberFormat ss:Format="@" />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s77">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="14" ss:Bold="1" />
+      <Interior ss:Color="#99CCFF" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection />
+    </Style>
+    <Style ss:ID="s78">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" x:Family="Swiss" ss:Bold="1" />
+      <Interior ss:Color="#D8D8D8" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s79">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Font ss:FontName="Arial" x:Family="Swiss" />
+      <Interior ss:Color="#D8D8D8" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection ss:Protected="0" />
+    </Style>
+    <Style ss:ID="s80">
+      <Alignment ss:Vertical="Bottom" />
+      <Borders />
+      <Interior ss:Color="#D8D8D8" ss:Pattern="Solid" />
+      <NumberFormat />
+      <Protection ss:Protected="0" />
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="Settings">
+    <Table x:FullColumns="1" x:FullRows="1" ss:StyleID="s63" ss:ExpandedColumnCount="6" ss:ExpandedRowCount="11">
+      <!--PLACEHOLDER-->
+      <ss:Row ss:AutoFitHeight="0" ss:Height="18" ss:StyleID="s64">
+        <ss:Cell ss:StyleID="s77">
+          <ss:Data ss:Type="String">Environment Settings</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s65" />
+        <ss:Cell ss:StyleID="s65" />
+        <ss:Cell ss:StyleID="s65" />
+        <ss:Cell ss:StyleID="s65" />
+        <ss:Cell ss:StyleID="s65" />
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="s65">
+          <ss:Data ss:Type="String">Environment Name:</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s65">
+          <ss:Data ss:Type="String">DEFAULT VALUES</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s78">
+          <ss:Data ss:Type="String">Local Development</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s78">
+          <ss:Data ss:Type="String">Shared Development</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s78">
+          <ss:Data ss:Type="String">Test</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s78">
+          <ss:Data ss:Type="String">Production</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="s65">
+          <ss:Data ss:Type="String">Generate File?</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s66" />
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Yes</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Yes</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Yes</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Yes</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="s65">
+          <ss:Data ss:Type="String">Settings File Name:</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s69">
+          <ss:Data ss:Type="String">Put values here that apply to all</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Exported_LocalSettings.xml</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Exported_DevSettings.xml</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Exported_TestSettings.xml</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s79">
+          <ss:Data ss:Type="String">Exported_ProdSettings.xml</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="s65" />
+        <ss:Cell ss:StyleID="s69">
+          <ss:Data ss:Type="String">environments by default.</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s67" />
+        <ss:Cell ss:StyleID="s67" />
+        <ss:Cell ss:StyleID="s67" />
+        <ss:Cell ss:StyleID="s67" />
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="s65">
+          <ss:Data ss:Type="String">Settings:</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="s67" />
+        <ss:Cell ss:StyleID="s67" />
+        <ss:Cell ss:StyleID="s67" />
+        <ss:Cell ss:StyleID="s67" />
+        <ss:Cell ss:StyleID="s67" />
+      </ss:Row>
+      <ss:Row>
+        <ss:Cell ss:StyleID="s72">
+          <ss:Data ss:Type="String">SampleSetting</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="Default" />
+        <ss:Cell ss:StyleID="Default">
+          <ss:Data ss:Type="String">LocalDevValue</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="Default">
+          <ss:Data ss:Type="String">SharedDevValue</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="Default">
+          <ss:Data ss:Type="String">QAValue</ss:Data>
+        </ss:Cell>
+        <ss:Cell ss:StyleID="Default">
+          <ss:Data ss:Type="String">ProductionValue</ss:Data>
+        </ss:Cell>
+      </ss:Row>
+    </Table>
+    <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+      <PageSetup>
+        <Layout x:Orientation="Landscape" x:CenterHorizontal="1" x:CenterVertical="1" />
+        <Header x:Margin="0" />
+        <Footer x:Margin="0" />
+        <PageMargins x:Bottom="0" x:Left="0" x:Right="0" x:Top="0" />
+      </PageSetup>
+      <FitToPage />
+      <Print>
+        <ValidPrinterInfo />
+        <Scale>15</Scale>
+        <HorizontalResolution>300</HorizontalResolution>
+        <VerticalResolution>300</VerticalResolution>
+        <Gridlines />
+      </Print>
+      <Selected />
+      <FreezePanes />
+      <FrozenNoSplit />
+      <SplitHorizontal>6</SplitHorizontal>
+      <TopRowBottomPane>6</TopRowBottomPane>
+      <ActivePane>2</ActivePane>
+      <Panes>
+        <Pane>
+          <Number>3</Number>
+        </Pane>
+        <Pane>
+          <Number>2</Number>
+        </Pane>
+      </Panes>
+      <ProtectObjects>False</ProtectObjects>
+      <ProtectScenarios>False</ProtectScenarios>
+      <AllowFormatCells />
+    </WorksheetOptions>
+  </Worksheet>
+</Workbook>

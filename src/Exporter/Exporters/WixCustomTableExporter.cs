@@ -5,14 +5,19 @@
 
 using System.Xml;
 
-namespace EnvironmentSettingsExporter
+namespace EnvSettingsManager
 {
     /// <summary>
     /// Export the settings contained in a DataTable to a single XML file.
     /// The output format is a WiX (Windows Installer XML) include file containing a custom table.
     /// </summary>
-    internal class DataTableToWixCustomTableXmlExporter : DataTableToXmlExporter
+    [UseSingleOutputFile]
+    internal class WixCustomTableExporter : XmlExporterBase
     {
+        internal WixCustomTableExporter(ExportActionArguments args)
+            : base(args)
+        { }
+
         private int index = 1;
 
         protected override void WriteHeader(XmlWriter xmlw, string environmentName)
