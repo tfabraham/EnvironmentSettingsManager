@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="BuildExporter;PackageMain">
+  <PropertyGroup>
+    <Version>1_6_1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Main Include=".\docs\EnvironmentSettingsManagerGuide.pdf" />
+    <Main Include=".\template\EnvironmentSettingsTemplate.xml" />
+    <Main Include=".\template\EnvironmentSettingsTemplate.xls" />
+    <Main Include="License.txt" />
+    <Main Include=".\src\Exporter\bin\release\EnvironmentSettingsExporter.exe" />
+  </ItemGroup>
+  
+  <Target Name="BuildExporter">
+    <MSBuild Projects="src\EnvironmentSettingsExporter.sln" Properties="Configuration=Release" Targets="Rebuild" />
+  </Target>
+
+  <Target Name="PackageMain">
+    <Delete Files="Staging\EnvironmentSettingsManagerV$(Version).zip" />
+    <Exec Command="tools\7za a -r -tzip Staging\EnvironmentSettingsManagerV$(Version).zip @(Main)" Condition="%(Identity) == %(Identity)" />
+  </Target>
+</Project>
