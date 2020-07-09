@@ -1,7 +1,5 @@
-// (c) Copyright 2007-10 Thomas F. Abraham.
-// This source is subject to the Microsoft Public License (Ms-PL).
-// See http://www.opensource.org/licenses/ms-pl.html
-// All other rights reserved.
+// Copyright 2007 Thomas F. Abraham. All Rights Reserved.
+// See LICENSE.txt for licensing information.
 
 using System;
 using System.Data;
@@ -45,18 +43,19 @@ namespace EnvironmentSettingsExporter
             Console.WriteLine(
                 "Environment Settings Spreadsheet to XML Exporter "
                 + assemblyVersion.Major + "." + assemblyVersion.Minor + "." + assemblyVersion.Build);
-            Console.WriteLine("[http://EnvSettingsManager.codeplex.com]");
-            Console.WriteLine("Copyright (C) 2007-11 Thomas F. Abraham.  All Rights Reserved.");
+            Console.WriteLine("[https://github.com/tfabraham/EnvironmentSettingsManager]");
+            Console.WriteLine("Copyright (C) 2007 Thomas F. Abraham.  All Rights Reserved.");
             Console.WriteLine();
             Console.ForegroundColor = defaultConsoleColor;
 
-            if (args.Length < 2 || args.Length > 3)
+            if (args.Length < 2 || args.Length > 4)
             {
                 PrintCommandLineHelp();
                 return -1;
             }
 
             string inputFile = args[0];
+            string inputFile2 = null;
             string outputPath = args[1];
 
             FormatType activeFormat = FormatType.XmlPreprocess;
@@ -64,12 +63,17 @@ namespace EnvironmentSettingsExporter
             // Handle any additional command-line parameters
             if (args.Length > 2)
             {
-                // Still assuming a fixed location for the Format parameter
-                string formatParam = args[2]; // Any more and we'll need a command line parser
-
-                string[] formatParamSplit = formatParam.Split(':');
-                if (string.Compare(formatParamSplit[0], "/F", StringComparison.InvariantCultureIgnoreCase) == 0)
+                if (args.Length == 4 || (args.Length == 3 && !args[2].StartsWith("/F", StringComparison.InvariantCultureIgnoreCase)))
                 {
+                    inputFile2 = args[2];
+                }
+
+                // Still assuming the Format parameter is last
+                string formatParam = args[args.Length - 1]; // Any more and we'll need a command line parser
+
+                if (formatParam.StartsWith("/F:", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    string[] formatParamSplit = formatParam.Split(':');
                     try
                     {
                         activeFormat = (FormatType)Enum.Parse(typeof(FormatType), formatParamSplit[1], true);
@@ -89,6 +93,14 @@ namespace EnvironmentSettingsExporter
             {
                 // Open the source file and read the settings into a DataTable.
                 DataTable settingsTable = SettingsFileReader.ReadSettingsFromExcelFile(inputFile);
+
+                if (inputFile2 != null)
+                {
+                    Console.WriteLine("Importing from " + Path.GetFileName(inputFile2) + "...");
+                    Console.WriteLine();
+
+                    settingsTable.Merge(SettingsFileReader.ReadSettingsFromExcelFile(inputFile2));
+                }
 
                 if (!Directory.Exists(outputPath))
                 {
@@ -144,13 +156,13 @@ namespace EnvironmentSettingsExporter
 
             Console.WriteLine();
             Console.WriteLine("Finished.");
-            
+
             return 0;
         }
 
         private static void PrintCommandLineHelp()
         {
-            Console.WriteLine("Usage: EnvironmentSettingsExporter.exe <ExcelFile.xls/x or ExcelFile.xml> <OutputPath> [/F:<XmlPreprocess/AppSettings/WixCustomTable>]");
+            Console.WriteLine("Usage: EnvironmentSettingsExporter.exe <ExcelFile.xls/x or ExcelFile.xml> <OutputPath> [ExcelFile2.xls/x or ExcelFile2.xml] [/F:<XmlPreprocess/AppSettings/WixCustomTable>]");
         }
     }
 }

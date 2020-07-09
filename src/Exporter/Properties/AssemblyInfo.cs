@@ -1,4 +1,7 @@
-﻿using System.Reflection;
+﻿// Copyright 2007 Thomas F. Abraham. All Rights Reserved.
+// See LICENSE.txt for licensing information.
+
+using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
@@ -10,7 +13,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("EnvironmentSettingsExporter")]
-[assembly: AssemblyCopyright("Copyright © 2007-11 Thomas F. Abraham")]
+[assembly: AssemblyCopyright("Copyright © 2007 Thomas F. Abraham")]
 [assembly: AssemblyTrademark("All Rights Reserved")]
 [assembly: AssemblyCulture("")]
 
@@ -26,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("1.6.1.0")]
-[assembly: AssemblyFileVersion("1.6.1.0")]
+[assembly: AssemblyVersion("1.7.0.0")]
+[assembly: AssemblyFileVersion("1.7.0.0")]

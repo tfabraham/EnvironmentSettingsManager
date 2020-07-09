@@ -1,7 +1,5 @@
-﻿// (c) Copyright 2007-10 Thomas F. Abraham.
-// This source is subject to the Microsoft Public License (Ms-PL).
-// See http://www.opensource.org/licenses/ms-pl.html
-// All other rights reserved.
+﻿// Copyright 2007 Thomas F. Abraham. All Rights Reserved.
+// See LICENSE.txt for licensing information.
 
 using System.Xml;
 

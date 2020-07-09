@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="BuildExporter;PackageMain">
   <PropertyGroup>
-    <Version>1_6_1</Version>
+    <Version>1_7_0</Version>
   </PropertyGroup>
 
   <ItemGroup>

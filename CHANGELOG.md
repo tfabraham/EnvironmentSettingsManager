@@ -1,3 +1,11 @@
+## Version 1.7 (7/8/2020)
+
+Changes in this release:
+
+* CHANGE: Require .NET Framework 4.5 or newer
+* CHANGE: Add support for optional 2nd input file (thanks @twinpiloot!)
+* CHANGE: Minor doc updates
+
 ## Version 1.6.1 (7/5/2011)
 
 Changes in this release:
